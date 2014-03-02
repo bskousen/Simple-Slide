@@ -1,24 +1,29 @@
 /* Start display for codepen do not need this code */
 
 body {
-  display: table;
-  margin: 20px auto;
-  background: #999;
+    display: table;
+    margin: 20px auto;
+    background: #999;
 }
 
 /* End display */
 
 
-.simple-slide { 
-  background: url(img/1.jpg) no-repeat 0 0; /* 1st slide */
-  position: relative;
-  width: 1000px; /* image width */
-  height: 350px; /* image height */
-  box-shadow: 1px 1px 10px rgba(0,0,0,.7); /* Optional */
+.simple-slide {
+    position: relative;
+    display: inline-block;
+    height: auto;
+    max-height: 350px;
+    overflow: hidden;
+    
+/* Optional Box Shadow */
+    -webkit-box-shadow: 1px 1px 10px rgba(0,0,0,.7);
+    -moz-box-shadow: 1px 1px 10px rgba(0,0,0,.7);
+    box-shadow: 1px 1px 10px rgba(0,0,0,.7);
 }
 
-.simple-slide img { 
-  position: absolute;
-  left: 0;
-  top: 0;
+.simple-slide img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
